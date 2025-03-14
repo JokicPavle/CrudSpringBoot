@@ -31,6 +31,11 @@ public class Employee {
         this.salary = salary;
     }
 
+    public void updateEmployeeDTO(EmployeeReqDTO employeeDTO) {
+        this.name = employeeDTO.getName();
+        this.position = employeeDTO.getPosition();
+        this.salary = employeeDTO.getSalary();
+    }
     public Long getId() {
         return id;
     }
